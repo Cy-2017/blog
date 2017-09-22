@@ -60,4 +60,4 @@ encoding: utf-8 # Make sure the encoding is right
 title: "meet" # Site name or title
 logo: "https://avatars1.githubusercontent.com/u/32173461?v=4&s=40" # Site logo
 description: "Nice to meet you." # Site description and default description
-url: "https://github.com/Cy-2017/blog" # Site url
+url: "https://cy-2017.github.io/blog/" # Site url
