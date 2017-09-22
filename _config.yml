@@ -1,0 +1,63 @@
+# Site configuration
+# 1. Files excluded from Jekyll builds
+# 2. Installed Gems
+# 3. Gem settings
+# 4. Jekyll settings
+# 5. Collections
+# 6. Jekyll collections settings
+# 7. Site settings
+
+# 1. Files excluded from Jekyll builds
+exclude:
+- README.md
+- screenshot.png
+- LICENSE
+- CNAME
+- Gemfile
+- Gemfile.lock
+- demo/*
+- garth-jekyll-theme.gemspec
+
+# 2. Installed Gems
+gems:
+- jekyll-paginate
+
+# 3. Gem settings
+paginate: 2 # jekyll-paginate > items per page
+paginate_path: page:num # jekyll-paginate > blog page
+
+# 4. Jekyll settings
+sass:
+  style: compressed # Style compression
+permalink: pretty  # Permalink style (/YYYY/MM/DD/page-name/)
+excerpt_separator: <!-- more --> # Marks end of excerpt in posts
+timezone: Europe/London # Timezone for blog posts and alike
+
+# 5. Collections
+collections:
+  posts:
+    title: meet # Needed for Siteleaf
+    output: true
+    description: Nice to meet you [about Garth](/about/)" # The post list page content
+
+# 6. Jekyll collections settings
+defaults:
+  -
+    scope:
+      path: ""
+      type: pages
+    values:
+      layout: page # Default layout
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post # Default layout
+
+# 7. Site settings
+encoding: utf-8 # Make sure the encoding is right
+title: "meet" # Site name or title
+logo: "https://avatars1.githubusercontent.com/u/32173461?v=4&s=40" # Site logo
+description: "Nice to meet you." # Site description and default description
+url: "https://github.com/Cy-2017/blog" # Site url
