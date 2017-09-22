@@ -36,9 +36,9 @@ timezone: Europe/London # Timezone for blog posts and alike
 # 5. Collections
 collections:
   posts:
-    title: meet # Needed for Siteleaf
+    title: Meet # Needed for Siteleaf
     output: true
-    description: Nice to meet you [about Garth](/about/)" # The post list page content
+    description: Nice to meet you [about Meet](/blog/about/)" # The post list page content
 
 # 6. Jekyll collections settings
 defaults:
@@ -57,7 +57,7 @@ defaults:
 
 # 7. Site settings
 encoding: utf-8 # Make sure the encoding is right
-title: "meet" # Site name or title
+title: "Meet" # Site name or title
 logo: "https://avatars1.githubusercontent.com/u/32173461?v=4&s=40" # Site logo
 description: "Nice to meet you." # Site description and default description
 url: "https://cy-2017.github.io/blog/" # Site url
