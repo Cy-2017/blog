@@ -3,12 +3,12 @@ title: 'Meet'
 description: '前端开发者/伪极客/灵魂摄影师，热爱技术&设计。很高兴能在这里与你分享我对技术和生活的思考。'
 keyword: '前端, 前端开发, 前端博客, javascript, vuejs, nodejs, 设计'
 url: 'https://cy-2017.github.io/blog' # your host
-baseurl: '/'
+baseurl: '/blog/'
 
 # Navigation links
 nav:
-  home: '/'
-  tags: '/tags.html'
+  home: '/blog'
+  tags: '/blog/tags.html'
 
 # Author 配置博主信息
 author: 'admin'
