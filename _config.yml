@@ -2,7 +2,7 @@
 title: '碎碎念'
 description: '前端开发者/伪极客，热爱技术&设计。很高兴能在这里与你分享我对技术和生活的思考。'
 keyword: '前端, 前端开发, 前端博客, javascript, vuejs, nodejs, 设计'
-url: 'https://cy-2017.github.io/blog' # your host
+url: 'https://cy-2017.github.io/blog/' # your host
 baseurl: '/'
 
 # Navigation links
