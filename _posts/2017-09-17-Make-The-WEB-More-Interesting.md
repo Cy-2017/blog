@@ -1,9 +1,11 @@
 ---
 layout: post
 title:  "Make the WEB more interesting"
+subtitle: '让WEB更有趣，让更多的人爱上WEB，爱上编程'
 date:   2017-09-17 21:51:00 +0700
-categories: bolg
-tags: [WEB, Antic]
+categories: WEB
+cover: 'https://cy-2017.github.io/blog/assets/img/20170917.jpg'
+tags: Javascript 前端开发
 ---
 
 

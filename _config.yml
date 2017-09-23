@@ -1,63 +1,64 @@
-# Site configuration
-# 1. Files excluded from Jekyll builds
-# 2. Installed Gems
-# 3. Gem settings
-# 4. Jekyll settings
-# 5. Collections
-# 6. Jekyll collections settings
-# 7. Site settings
+# Site settings 配置站点
+title: '碎碎念'
+description: '前端开发者/伪极客，热爱技术&设计。很高兴能在这里与你分享我对技术和生活的思考。'
+keyword: '前端, 前端开发, 前端博客, javascript, vuejs, nodejs, 设计'
+url: 'https://cy-2017.github.io/blog' # your host
+baseurl: '/'
 
-# 1. Files excluded from Jekyll builds
-exclude:
-- README.md
-- screenshot.png
-- LICENSE
-- CNAME
-- Gemfile
-- Gemfile.lock
-- demo/*
-- garth-jekyll-theme.gemspec
+# Navigation links
+nav:
+  home: '/'
+  tags: '/tags.html'
 
-# 2. Installed Gems
-gems:
-- jekyll-paginate
+# Author 配置博主信息
+author: 'admin'
+nickname: 'admin'
+bio: '前端开发者，热爱技术&设计，简单乐观爱创造'
+avatar: 'assets/img/profile.jpg'
 
-# 3. Gem settings
-paginate: 2 # jekyll-paginate > items per page
-paginate_path: page:num # jekyll-paginate > blog page
+# Search
+search: true
 
-# 4. Jekyll settings
-sass:
-  style: compressed # Style compression
-permalink: pretty  # Permalink style (/YYYY/MM/DD/page-name/)
-excerpt_separator: <!-- more --> # Marks end of excerpt in posts
-timezone: Europe/London # Timezone for blog posts and alike
+# Night mode
+nightMode: true
 
-# 5. Collections
-collections:
-  posts:
-    title: Meet # Needed for Siteleaf
-    output: true
-    description: Nice to meet you [about Meet](/blog/about/)" # The post list page content
+# Comments
+disqus: false
+disqus_url: 'https://liaokeyu.disqus.com/embed.js'
 
-# 6. Jekyll collections settings
-defaults:
-  -
-    scope:
-      path: ""
-      type: pages
-    values:
-      layout: page # Default layout
-  -
-    scope:
-      path: ""
-      type: posts
-    values:
-      layout: post # Default layout
+# Share
+social-share: true #false 
+social-share-items: ['wechat', 'weibo', 'douban', 'twitter']
 
-# 7. Site settings
-encoding: utf-8 # Make sure the encoding is right
-title: "Meet" # Site name or title
-logo: "https://avatars1.githubusercontent.com/u/32173461?v=4&s=40" # Site logo
-description: "Nice to meet you." # Site description and default description
-url: "https://cy-2017.github.io/blog/" # Site url
+# theme color 主题皮肤
+theme-color: 'default'  # pink or default
+
+# Post header background patterns (when the post no cover): circuitBoard, overlappingCircles, food, glamorous, ticTacToe, seaOfClouds
+postPatterns: 'food'
+
+# SNS settings 配置社交网站url: weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
+sns:
+  weibo: '//weibo.com/lovecolcol'
+  juejin: '//juejin.im/user/57a6f434165abd006159b4cc'
+  instagram: '//www.instagram.com/steveliaocn'
+  github: '//github.com/kaeyleo'
+
+# Tags 设置标签
+recommend-tags: true # whether or not display recommend-tags on the sidebar
+recommend-condition-size: 12 # a tag will be recommended if the size of it is more than this value
+
+# Build settings
+paginate: 6
+paginate_path: 'page:num'
+exclude: ['node_modules', 'dev', 'package.json', 'gulpfile.js', '.gitignore', 'README.md']
+
+# Markdown
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+
+RSS: false
+
+# Plugins
+gems: [jekyll-paginate]
